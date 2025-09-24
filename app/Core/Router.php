@@ -18,7 +18,8 @@ class Router
 
     private function normalizePath(string $path): string
     {
-        return rtrim($path, '/');
+        $path = rtrim($path, '/');
+        return $path === '' ? '/' : $path;
     }
 
     public function get(string $path, $handler): void
