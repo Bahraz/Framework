@@ -2,7 +2,6 @@
 
 namespace Bahraz\Framework\Core;
 
-use Bahraz\Framework\Core\Path;
 use RuntimeException;
 
 class View{
